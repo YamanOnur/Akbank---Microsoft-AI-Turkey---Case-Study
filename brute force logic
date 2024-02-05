@@ -1,0 +1,15 @@
+73837 TP : Bu sayıda müşteri gerçekten kredi borcunu ödemedi ve modelimiz bu kadarını doğru tahmin etti. Büyük olmalı 
+84407 TN : Bu sayıda müşteri kredi borcunu ödedi ve modelimiz ödedi diye tahmin etti. Büyük olmalı
+180 FP : Bu sayıda müşteri aslında kredi borcunu ödedi, ama modelimiz ödemedi diye tahmin etti. Küçük olmalı : 221 kişi hakkında yanlış fikir edindik
+8304 FN : Bu sayıda müşteri aslında kredi borcunu ödemedi, ama modelimiz ödedi diye tahmin etti. Küçük olmalı : 8473 kişi hakkında yanlış fikir edindik : kredi borcunu ödeyemeyecek bu kadar sayıdaki insana kredi vermek banka açısından zarar
+
+precision = TP / TP + FP  : Borcunu ödemeyecek müşterilerin ne kadarını gerçekten doğru tahmin ettik ! Kesinlik
+recall = TP / TP + FN     : Modelin gerçekten kredi borcunu ödemeyecek olanları yakalayabilme hassaslığı ! Hassaslık
+
+Sonuç: 
+
+Precision büyüklüğü bize model hakkında şu ipucunu verir: Borcunu ödemeyecek olan müşterileri ne oranda doğru tespit ettik (oldukça iyi)
+Recall büyüklüğü bize modelin hassaslığı hakkında ipucu verir:  8473 kişiye kredi borcunu ödemeyeceği halde kredi vermiş olacağız.
+Burada precision büyüklüğü biraz daha önemli gibi görünüyor. Başka bir deyişle öncelikle kredi borcunu ödemeyecek olanları tespit etmeye öncelik veriyoruz (yüksek precision). Fakat bu recall değerini de düşünmeyeceğimiz anlamına gelmiyor. Banka kredi borcunu ödeyecek olan her bir müşteriden de kar edecektir (yüksek recall). 
+
+Optimum bir strateji benimsemek adına F1 skoru için bir hedef belirlemek iyi bir fikir olabilir.
