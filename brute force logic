@@ -12,7 +12,7 @@ recall = TP / TP + FN     : Modelin gerçekten kredi borcunu ödemeyecek olanlar
 Sonuç: 
 
 Precision büyüklüğü bize model hakkında şu ipucunu verir: 
-Borcunu ödemeyecek olan müşterilerin ne oranda doğru tespit ettik (şu an oldukça iyi bir rakam)
+Borcunu ödemeyecek olan müşterileri ne oranda doğru tespit ettik (şu an oldukça iyi bir rakam)
 Recall büyüklüğü bize modelin hassaslığı hakkında ipucu verir:  
 8304 kişiye kredi borcunu ödemeyeceği halde kredi vermiş olacağız.
 Burada precision büyüklüğü biraz daha önemli gibi görünüyor. 
