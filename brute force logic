@@ -15,7 +15,7 @@ Precision büyüklüğü bize model hakkında şu ipucunu verir:
 Borcunu ödemeyecek olan müşterileri ne oranda doğru tespit ettik (şu an oldukça iyi bir rakam)
 Recall büyüklüğü bize modelin hassaslığı hakkında ipucu verir:  
 8304 kişiye kredi borcunu ödemeyeceği halde kredi vermiş olacağız.
-Burada precision büyüklüğü biraz daha önemli gibi görünüyor. 
+Burada recall büyüklüğü biraz daha önemli gibi görünüyor. 
 Başka bir deyişle öncelikle kredi borcunu ödemeyecek olanları tespit etmeye öncelik veriyoruz (yüksek precision). 
 Fakat bu recall değerini de düşünmeyeceğimiz anlamına gelmiyor. Banka kredi borcunu ödeyecek olan her bir müşteriden 
 de kar edecektir (yüksek recall). 
